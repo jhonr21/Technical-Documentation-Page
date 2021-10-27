@@ -1,0 +1,69 @@
+#navbar {
+    
+    background-color: #ddd;
+    height: 45rem;
+    
+  }
+  .nav-link{
+    width: 10rem;
+    background-color: rgb(169 169 169);
+    text-align: center;
+  }
+  nav#navbar {
+    text-align: center;
+    margin-left: -7px;
+    position: fixed;
+    width: 15rem;
+    
+  }
+  
+  nav#navbar a {
+    display: block;
+    border: 1px solid black;
+    padding: 16px;
+    margin: 10px 0;
+    text-decoration: unset;
+    color: black;
+    border-radius: 7px;
+    margin-left: 20px;
+  }
+  
+  main#main-doc {
+    grid-area: mainContent;
+    width: 56rem;
+    margin-left: 15rem;
+  }
+  
+  header {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    width: 56rem;
+    height: 40px;
+    text-align: center;
+  }
+  header#nav-1{
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    width: 15rem;
+    text-align: revert;
+  }
+  code {
+    background-color: #ccc;
+    padding: 20px;
+    display: block;
+  }
+  
+  @media screen and (max-width: 750px) {
+    div.main-body {
+      grid-template-columns: 1fr;
+      grid-template-areas: "navbar" "mainContent";
+    }
+      nav#navbar {
+      position: inherit;
+    }
+  }
+  
