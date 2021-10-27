@@ -32,6 +32,8 @@
     grid-area: mainContent;
     width: 56rem;
     margin-left: 15rem;
+    border: 7px solid #9e9e9e;
+    background-color: gainsboro;
   }
   
   header {
@@ -52,9 +54,12 @@
     text-align: revert;
   }
   code {
-    background-color: #ccc;
+    background-color: #888;
     padding: 20px;
     display: block;
+    border: 2px solid black;
+    width: 590px;
+    height: 2rem;
   }
   
   @media screen and (max-width: 750px) {
