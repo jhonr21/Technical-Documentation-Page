@@ -2,12 +2,22 @@
     
     background-color: #ddd;
     height: 45rem;
-    
+    display: block;position: fixed;
+    min-width: 243px;
+  }
+  
+  #navbar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
   }
   .nav-link{
     width: 10rem;
     background-color: rgb(169 169 169);
     text-align: center;
+    position: relative;
   }
   nav#navbar {
     text-align: center;
@@ -27,7 +37,12 @@
     border-radius: 7px;
     margin-left: 20px;
   }
-  
+  #navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
   main#main-doc {
     grid-area: mainContent;
     width: 75rem;
@@ -68,22 +83,116 @@
     text-indent: 20px;
   }
   
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 815px) {
+
     main#main-doc {
-      
-      width: 30rem;
-      margin: -20;
-      margin-top: -45rem;
-      
+    margin-left: -6.9px;
+    width: 18rem;
+    margin-top: 0rem;
+
+    }
+
+
+    main#main-doc {
+    margin: 22px;
+    margin-top: 6.5rem;
+    margin-right: -14rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "navbar"
+        "mainContent";
+    width: 42rem;
     }
       nav#navbar {
       position: inherit;
       width: 15rem;
       
     }
-    header{
-      width: 30rem;
+    nav#navbar a {
+      width: 38rem;
+      margin-left: 48px;
+      
     }
-  }
+    header#nav-1{
+      width: 45rem;
+    }
+    header{
+      width: 42rem;
 
+    }
+    
+    code{
+      width: 360px;
+    }
   
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+    
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+  }
+  
+    }
+
+  @media only screen and (max-width: 400px) {
+    .main-body{
+      margin-left: 30px;
+    }
+    
+    main#main-doc {
+      margin-left: 26.1px;
+      width: 14rem;
+      margin-top: 0rem;
+    }
+    header{
+      width: 14rem;
+      height: 15;
+    }
+    code {
+      margin-left: 0px;
+      width: 10rem;
+      padding: 29px;
+      padding-left: 12px;
+      padding-right: 46px;
+      height: 4rem;
+  }
+    
+
+
+    
+    nav#navbar a{
+    
+      padding: 3px;
+      width: 12rem;
+      margin-left: 18px;
+      
+  }
+ #barra{
+  background-color: grey;
+  width: 240px;
+  height: 16.5rem;
+  margin-left: 37px;
+ }
+  
+   
+    
+header#nav-1{
+  
+  width: 15rem;
+  font-size: 19px;
+  background-color: blue;
+  margin-left: 1px;
+}
+}
